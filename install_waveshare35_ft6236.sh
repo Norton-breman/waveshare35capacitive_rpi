@@ -58,7 +58,7 @@ dtparam=spi=on
 dtoverlay=mipi-dbi-spi,speed=48000000
 dtparam=compatible=st7796s\0panel-mipi-dbi-spi
 dtparam=width=320,height=480,width-mm=49,height-mm=79
-dtparam=reset-gpio=27,dc-gpio=25,backlight-gpio=18
+dtparam=reset-gpio=27,dc-gpio=25,backlight-gpio=22
 dtoverlay=ft6236
 # ======================================
 EOF
