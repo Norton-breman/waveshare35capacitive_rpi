@@ -6,4 +6,7 @@ Tested OS:
   raspberry os lite bullseye
   dietpi trixie
 
-installation script comming soon.
+Edit pin numbers corresponding to your wiring in install_waveshare35_ft6236.sh
+sudo chmod +x install_waveshare35_ft6236.sh
+
+sudo ./install_waveshare35_ft6236.sh
