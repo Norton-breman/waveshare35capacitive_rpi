@@ -3,7 +3,8 @@ set -e
 
 REPO_URL="https://github.com/Norton-breman/waveshare35capacitive_rpi.git"
 WORKDIR="/opt/waveshare35"
-CONFIG_FILE="/boot/firmware/config.txt"
+#CONFIG_FILE="/boot/firmware/config.txt"
+CONFIG_FILE="/boot/config.txt"
 FIRMWARE_DST="/lib/firmware/st7796s.bin"
 OVERLAY_DST="/boot/firmware/overlays/ft6236.dtbo"
 
@@ -16,11 +17,11 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Dépendances
-echo "📦 Installation des dépendances..."
-apt update
-apt install -y git device-tree-compiler
+#echo "📦 Installation des dépendances..."
+#apt update
+#apt install -y git device-tree-compiler
 
-cd "$WORKDIR"
+#cd "$WORKDIR"
 
 # Firmware écran
 if [ -f "st7796s.bin" ]; then
